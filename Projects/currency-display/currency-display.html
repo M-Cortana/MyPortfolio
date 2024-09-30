@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta charset="utf-8">
+        <title>Currency Display</title>
+</head>
+<body>
+        <h1>Zonghua Ouyang</h1>
+        <p>
+                Philadelphia, Pennsylvania     |     <a href="mailto:zo44@seas.upenn.edu"> zo44@seas.upenn.edu </a>     |     <a href="tel:4808759018">480-875-9018</a>
+        </p>
+        <hr>
+        <h2>What is This Project About?</h2>
+        <p>
+                This is a hardware design that can display the real-time currency between CNY or CNH and USD on a segment display.
+        </p>
+        <p>
+                <img src="model.png" width="50%" alt="3D Model">
+                <div align="center">Figure: 3D Model</div>
+        </p><p>
+                <img src="PCB.png" width="50%" alt="PCB Design">
+                <div align="center">Figure: PCB Design</div>
+        </p><hr>
+        <h2>Why I Build This Project?</h2>
+        <p>
+                At the time I built this project, the currency between the Chinese Yuan and the U.S. Dollar fluctuated dramatically. I think a display on my desk that displays the real-time currency can help me decide when to buy some dollars. 
+        </p><hr>
+        <h2>What Problems Did I Resolve in the Project?</h2>
+        <h3>HTTPs Request</h3>
+        <p>
+                The API I chose to retrieve the currency information can only be requested using HTTPS. While handling HTTPS request is as simple as HTTP request on Linux and Windows. Using a microcontroller to post an HTTPS request is not an easy task. Fortunately, ESP32 provides some libraries to handle HTTPS requests, but I also need to configure the certifications.
+        </p><hr>
+        <h2>How I Improved from This Project?</h2>
+        <ul>
+                <li>Learned how to program a ESP32 microcontroller</li>
+                <li>Improved my ability to design, manufacture, and soldering a PCB</li>
+                <li>Acquired the knowledge of HTTPS</li>
+        </ul>
+        <div align="left" style="padding-bottom: 200pt;"> </div>
+</body>
+</html>
