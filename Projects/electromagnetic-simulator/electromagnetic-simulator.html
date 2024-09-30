@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <title>Electromagnetic Simulator</title>
 </head>
-<body>
+<body onload="TimeStart()">
         <h1>Zonghua Ouyang</h1>
         <p>
                 Philadelphia, Pennsylvania     |     <a href="mailto:zo44@seas.upenn.edu"> zo44@seas.upenn.edu </a>     |     <a href="tel:4808759018">480-875-9018</a>
@@ -52,7 +52,16 @@
         <ul>
                 <li>Deepened my understating of Maxwell equations.</li>
                 <li>Improved the ability in parallel programming</li>
-        </ul><hr>
+        </ul><hr><br><br>
+        <p id="time-stamp">
+        </p>
+        <script>
+                function TimeStart(){
+                        setInterval(function(){document.getElementById("time-stamp").innerHTML="Current Unix Time: "+Math.floor(Date.now()/1000)},1000);
+                        document.getElementById("time-stamp").innerHTML="Current Unix Time: "+Math.floor(Date.now()/1000);
+                }
+                
+        </script>
         <div align="left" style="padding-bottom: 200pt;"> </div>
 </body>
 </html>
