@@ -1,0 +1,135 @@
+@font-face {
+        font-family: aptos-serif;
+        src: url("aptos-serif.ttf")
+}
+
+@font-face {
+        font-family: aptos-serif-bold;
+        src: url("aptos-serif-bold.ttf")
+}
+
+body {
+        --margin: 15%;
+}
+
+h1 {
+        text-align: left;
+        font-family: aptos-serif-bold, "Gerogia", serif;
+        font-size: 51pt;
+        line-height: 1;
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+        text-indent: 0;
+}
+h2 {
+        font-size: 27pt;
+        font-family: aptos-serif-bold, "Gerogia", serif;
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+        margin-top: 9pt;
+}
+h3 {
+        font-size: 18pt;
+        font-family: aptos-serif-bold, "Gerogia", serif;
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+        margin-top: -18pt;
+}
+
+ul {
+        text-align: left;
+        font-family: aptos-serif, "Gerogia", serif;
+        font-size: 18pt;
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+        padding-left: 18pt;
+        text-indent: 0;
+        margin-top: -18pt;
+}
+
+p {
+        text-align: left;
+        font-family: aptos-serif, "Gerogia", serif;
+        font-size: 18pt;
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+        text-indent: 0;
+        margin-top: -18pt;
+}
+bold {
+        text-align: left;
+        font-family: aptos-serif-bold, "Gerogia", serif;
+        font-size: 18pt;
+}
+nm {
+        text-align: left;
+        font-family: aptos-serif, "Gerogia", serif;
+        font-size: 18pt;
+}
+
+aright {
+        text-align: right;
+        font-family: aptos-serif, "Gerogia", serif;
+        font-size: 18pt;
+}
+
+table {
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+        width: calc(100% - 2*var(--margin));
+        vertical-align: top;
+        border-style: none;
+        margin-top: -24pt;
+}
+td {
+        vertical-align: top;
+        border-style: none;
+        text-align: attr(align);
+}
+
+hr {
+        margin-top: 9pt;
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+        border: none;
+        height: 1.5pt;
+        color: black;
+        background-color: black;
+}
+
+img {
+        padding-top: 9pt;
+        display: block;
+        margin: auto;
+}
+
+video {
+        padding-top: 9pt;
+        display: block;
+        margin: auto;
+}
+
+div {
+        text-align: attr(align);
+        font-family: aptos-serif, "Gerogia", serif;
+        font-size: 18pt;
+        margin-left: var(--margin);
+        margin-right: var(--margin);
+        text-indent: 0;
+        margin-top: -18pt;
+        padding-top: 9pt;
+        padding-bottom: 9pt;
+}
+
+a:link {
+        color:black
+}
+a:visited {
+        color:black
+}
+a:hover {
+        color:blueviolet
+}
+a:active {
+        color:blue
+}
