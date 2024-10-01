@@ -1,11 +1,11 @@
 @font-face {
         font-family: aptos-serif;
-        src: url("aptos-serif.ttf")
+        src: url("./aptos-serif.ttf")
 }
 
 @font-face {
         font-family: aptos-serif-bold;
-        src: url("aptos-serif-bold.ttf")
+        src: url("./aptos-serif-bold.ttf")
 }
 
 body {
