@@ -1,11 +1,11 @@
 @font-face {
         font-family: aptos-serif;
-        src: url("./aptos-serif.ttf")
+        src: url("aptos-serif.ttf")
 }
 
 @font-face {
         font-family: aptos-serif-bold;
-        src: url("./aptos-serif-bold.ttf")
+        src: url("aptos-serif-bold.ttf")
 }
 
 body {
@@ -19,6 +19,7 @@ h1 {
         line-height: 1;
         margin-left: var(--margin);
         margin-right: var(--margin);
+        font-weight: 100;
         text-indent: 0;
 }
 h2 {
@@ -26,6 +27,7 @@ h2 {
         font-family: aptos-serif-bold, "Gerogia", serif;
         margin-left: var(--margin);
         margin-right: var(--margin);
+        font-weight: 100;
         margin-top: 9pt;
 }
 h3 {
@@ -33,6 +35,7 @@ h3 {
         font-family: aptos-serif-bold, "Gerogia", serif;
         margin-left: var(--margin);
         margin-right: var(--margin);
+        font-weight: 100;
         margin-top: -18pt;
 }
 
@@ -59,17 +62,20 @@ p {
 bold {
         text-align: left;
         font-family: aptos-serif-bold, "Gerogia", serif;
+        font-weight: 100;
         font-size: 18pt;
 }
 nm {
         text-align: left;
         font-family: aptos-serif, "Gerogia", serif;
+        font-weight: 100;
         font-size: 18pt;
 }
 
 aright {
         text-align: right;
         font-family: aptos-serif, "Gerogia", serif;
+        font-weight: 100;
         font-size: 18pt;
 }
 
