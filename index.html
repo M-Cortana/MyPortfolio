@@ -14,8 +14,20 @@
         <hr>
 
         <h2>My Resume</h2>
+        <p>
+        <div id="adobe-dc-view"></div>
+        <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+        <script type="text/javascript">
+                document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+                        var adobeDCView = new AdobeDC.View({clientId: "cb2bd093f630412f8cc2b007189ce8fc", divId: "adobe-dc-view"});
+                        adobeDCView.previewFile({
+                                content:{location: {url: "Zonghua Ouyang Resume.pdf"}},
+                                metaData:{fileName: "Zonghua Ouyang Resume.pdf"}
+                        }, {embedMode: "IN_LINE"});
+                });
+        </script>
+        </p>
         <ul>
-                <li><a href="resume.html">View Online</a></li>
                 <li><a href="Zonghua Ouyang Resume.pdf">Download PDF</a></li>
                 <li><a href="Reference/reference.html">Reference for My Resume</a></li>
         </ul>
