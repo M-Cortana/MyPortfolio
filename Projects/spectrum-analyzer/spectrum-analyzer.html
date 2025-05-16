@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <meta charset="utf-8">
+        <title>Currency Display</title>
+</head>
+<body onload="TimeStart()">
+        <h1>Zonghua Ouyang</h1>
+        <p>
+                Philadelphia, Pennsylvania     |     <a href="mailto:zo44@seas.upenn.edu"> zo44@seas.upenn.edu </a>     |     <a href="tel:4808759018">480-875-9018</a>
+        </p>
+        <hr>
+        <h2>What is This Project About?</h2>
+        <p>
+                This is the project of our tape-out course Chips-Design. In this course, we had the opportunity to design our own chip and send it for fabrication (tape-out). This is a project of a group of 2, and I am responsible for the design of the PLL frequency synthesizer and the serial input parallel output memory to configure the freqeuency synthesizer. The PLL frequency synthesizer is designed to generate a frequency range from 1 Mhz to 600 MHz.
+        </p>
+        <p>
+                <img src="layout.png" width="70%" alt="3D Model">
+                <div align="center">Figure: Layout of The Chip</div>
+        </p><hr>
+        <h2>What Problems Did I Resolve in the Project?</h2>
+        <h3>Validation of the Chip</h3>
+        <p>
+                The most difficult part of this project is to validate the chip using simulation. Since the PLL will needs 1 ms to lock and the output frequency is at 600 MHz, which means we need to simulate for a long time with a very short step size. The time as well as the resources on server are not allowed to simulate the whole system, so we need to make a plan to validate our chip. After talking with our professor, we deicide to seperqte each component seperately and validate them one by one. When validating the whole system, we use ideal parts to simplify the simulation, e.g. we use ideal dividers to replace our real dividers. This can help us to save a lot of time and resources.
+        </p>
+        <hr>
+        <h2>How I Improved from This Project?</h2>
+        <ul>
+                <li>Improved my ability to use Cadence Virtuoso</li>
+                <li>Acquired the knowledge of the principle of the spectrum analyzer and the PLL frequency synthesizer</li>
+                <li>Learned how to design a proper phase locked loop</li>
+                <li>Leaned how to set up and configure proper simulations to valiate a chip</li>
+        </ul><hr><br><br>
+        <p id="time-stamp">
+        </p>
+        <script>
+                function TimeStart(){
+                        setInterval(function(){document.getElementById("time-stamp").innerHTML="Current Unix Time: "+Math.floor(Date.now()/1000)},1000);
+                        document.getElementById("time-stamp").innerHTML="Current Unix Time: "+Math.floor(Date.now()/1000);
+                }
+                
+        </script>
+        <div align="left" style="padding-bottom: 200pt;"> </div>
+</body>
+</html>
