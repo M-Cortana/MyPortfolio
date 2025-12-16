@@ -11,6 +11,18 @@
                 Philadelphia, Pennsylvania     |     <a href="mailto:zo44@seas.upenn.edu"> zo44@seas.upenn.edu </a>     |     <a href="tel:4808759018">480-875-9018</a>
         </p>
         <hr>
+        <h2>Demo Slides</h2>
+        <div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
+        <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+        <script type="text/javascript">
+        	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+        		var adobeDCView = new AdobeDC.View({clientId: "cb2bd093f630412f8cc2b007189ce8fc", divId: "adobe-dc-view"});
+        		adobeDCView.previewFile({
+        			content:{location: {url: "https://acrobatservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+        			metaData:{fileName: "Bodea Brochure.pdf"}
+        		}, {embedMode: "SIZED_CONTAINER"});
+        	});
+        </script>
         <h2>What is This Project About?</h2>
         <p>
                 This is the project of our tape-out course Chips-Design. In this course, we had the opportunity to design our own chip and send it for fabrication (tape-out). This is a project of a group of 2, and I am responsible for the design of the PLL frequency synthesizer and the serial input parallel output memory to configure the freqeuency synthesizer. The PLL frequency synthesizer is designed to generate a frequency range from 1 Mhz to 600 MHz.
